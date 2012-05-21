@@ -13,3 +13,23 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+config/database.yml
+config/settings.local.yml
+
+# clone of the dev db structure
+/db/structure.sql
+
+# osx noise
+.DS_Store
+profile
+
+ruby_debug_initializer.rb
+
+# TextMate 2 config files
+.tm_properties
+
+# TextMate 1 config files
+*.tmproj
+
+# bundler binstubs
