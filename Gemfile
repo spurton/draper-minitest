@@ -7,6 +7,9 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 
+#https://github.com/jcasimir/draper
+gem 'draper'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,7 +20,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.0.3'˝
 end
 
 gem 'jquery-rails'
@@ -36,3 +39,18 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test do
+  gem 'minitest'
+  gem 'capybara'
+  gem 'turn'
+  gem 'rspec-expectations'
+  # https://github.com/thoughtbot/factory_girl_rails
+  gem 'factory_girl_rails'
+  # https://github.com/ordinaryzelig/capybara_minitest_spec
+  gem 'capybara_minitest_spec'
+  # https://github.com/commondream/tconsole
+  gem 'tconsole'
+  gem 'database_cleaner'
+  gem 'rr'
+end
