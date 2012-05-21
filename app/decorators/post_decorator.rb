@@ -29,4 +29,8 @@ class PostDecorator < Draper::Base
   #     h.content_tag :span, time.strftime("%a %m/%d/%y"),
   #                   :class => 'timestamp'
   #   end
+  
+  def show_link
+    h.link_to(post.title, post)
+  end
 end
